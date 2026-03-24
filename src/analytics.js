@@ -1,4 +1,4 @@
-const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycby5LUjsQ_NpNFvkZHGySePe6J5DC7SyeVLVMBy_W_E_KC-8OlZh5dF5fuA9MJidoolH/exec';
+const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzSPQFe2au71M3PIXhQOblkj6AUhmLs1zsmqnLCEftMepNSDLWcEjcgB_G1GAFy2E6j/exec';
 
 const analytics = {
   sessionId: `sess_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`,
