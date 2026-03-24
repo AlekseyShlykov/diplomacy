@@ -1,0 +1,200 @@
+{
+  "round_1": {
+    "duration_seconds": 240,
+    "intro": {
+      "type": "slides",
+      "slides": [
+        "Switzerland. A private residence in the mountains.",
+        "Diplomats and industrialists gather to shape the future of Europe.",
+        "The proposed agreement promises peace through economic interdependence.",
+        "But not everyone in the room wants it to succeed.",
+        "Tonight, conversations matter. Trust is fragile. And timing is everything."
+      ],
+      "briefing_after": true
+    },
+    "events": [
+      {
+        "id": "round_start",
+        "time": 0,
+        "type": "system",
+        "effects": [
+          "unlock_all_characters",
+          "unlock_rooms",
+          "enable_dialogues"
+        ]
+      },
+      {
+        "id": "telegram_arrival",
+        "time": 72,
+        "type": "narrative",
+        "text": {
+          "en": "A telegram arrives. Its contents are not fully disclosed, but it adds tension to the negotiations.",
+          "ru": "Приходит телеграмма. Ее содержание не раскрывают, но в переговорах сразу растет напряжение."
+        },
+        "effects": [
+          "unlock_new_topics",
+          "increase_global_tension",
+          "trigger_rumor_spread"
+        ],
+        "hints": [
+          {
+            "en": "Something has changed in the tone of the evening.",
+            "ru": "Что-то изменилось в тоне вечера."
+          }
+        ]
+      },
+      {
+        "id": "first_drinks",
+        "time": 144,
+        "type": "state_change",
+        "text": {
+          "en": "Drinks are served. Guests move more freely between rooms.",
+          "ru": "Напитки подаются. Гости более свободно перемещаются между комнатами."
+        },
+        "effects": [
+          "enable_poison_preparation",
+          "increase_movement_between_rooms",
+          "unlock_private_conversations"
+        ],
+        "hints": [
+          {
+            "en": "Moments of privacy are becoming easier to find.",
+            "ru": "Моменты уединения становятся всё доступнее."
+          }
+        ]
+      },
+      {
+        "id": "final_drinks",
+        "time": 216,
+        "type": "critical",
+        "text": {
+          "en": "Final drinks are served. The evening is nearing its conclusion.",
+          "ru": "Подают последние напитки. Вечер подходит к концу."
+        },
+        "effects": [
+          "enable_poison_execution",
+          "lock_some_dialogues",
+          "mark_targets_for_resolution"
+        ],
+        "hints": [
+          {
+            "en": "This may be the last chance to act.",
+            "ru": "Возможно, это последний шанс действовать."
+          }
+        ]
+      },
+      {
+        "id": "death_event",
+        "time": 240,
+        "type": "resolution",
+        "text": {
+          "en": "A guest suddenly collapses. The room falls silent.",
+          "ru": "Гость внезапно падает. В комнате наступает тишина."
+        },
+        "effects": [
+          "resolve_poison",
+          "trigger_death",
+          "end_round"
+        ]
+      }
+    ],
+    "rooms": [
+      {
+        "id": "main_hall",
+        "name": {
+          "en": "Main Hall",
+          "ru": "Главный зал"
+        },
+        "type": "group_chat",
+        "description": {
+          "en": "The central gathering space where all guests may speak.",
+          "ru": "Центральное место для собраний, где могут высказаться все гости."
+        }
+      },
+      {
+        "id": "balcony",
+        "name": {
+          "en": "Balcony",
+          "ru": "Балкон"
+        },
+        "type": "group_chat",
+        "description": {
+          "en": "A quieter space for more private conversations.",
+          "ru": "Более тихое место для более приватных бесед."
+        }
+      },
+      {
+        "id": "smoking_room",
+        "name": {
+          "en": "Smoking Room",
+          "ru": "Курительная"
+        },
+        "type": "group_chat",
+        "description": {
+          "en": "A place where tension and candid discussions emerge.",
+          "ru": "Место, где возникает напряжение и откровенные дискуссии."
+        }
+      }
+    ],
+    "mechanics": {
+      "movement": {
+        "type": "free",
+        "note": {
+          "en": "Player can initiate dialogue in any room or private chat",
+          "ru": "Игрок может начать диалог в любой комнате или приватном чате."
+        }
+      },
+      "isolation": {
+        "type": "dialogue_based",
+        "description": {
+          "en": "A character becomes isolated when engaged in a private or exclusive conversation",
+          "ru": "Персонаж становится изолированным, когда участвует в приватном или эксклюзивном разговоре."
+        },
+        "effects": [
+          "increased_poison_success",
+          "reduced_external_interference"
+        ]
+      },
+      "poison": {
+        "preparation": {
+          "enabled_after_event": "first_drinks",
+          "conditions": [
+            "player_role_is_agent"
+          ]
+        },
+        "execution": {
+          "enabled_after_event": "final_drinks",
+          "conditions": [
+            "target_isolated",
+            "interaction_occurred"
+          ]
+        }
+      }
+    },
+    "hint_system": {
+      "max_hints": 3,
+      "delivery": "event_based",
+      "style": "subtle",
+      "examples": [
+        "Someone seems easier to speak with when alone.",
+        "The evening is moving toward a decisive moment.",
+        "Not every opportunity will repeat itself."
+      ]
+    },
+    "epilogue": {
+      "trigger": "after_death",
+      "content": [
+        "The evening ends in confusion and whispered accusations.",
+        "What truly happened will only become clear with time.",
+        "Some gained advantage. Others lost control."
+      ],
+      "cta": {
+        "text": {
+          "en": "Leave your email to be notified when the full story continues.",
+          "ru": "Оставьте свой адрес электронной почты, чтобы получить уведомление, когда вся история продолжится."
+        },
+        "action": "email_capture"
+      }
+    }
+  }
+}

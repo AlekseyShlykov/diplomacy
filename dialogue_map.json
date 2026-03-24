@@ -1,0 +1,225 @@
+{
+    "global_rules": {
+      "choices_per_node": 3,
+      "depth": 3,
+      "trust_impact": "almost_always",
+      "visibility": "hidden_logic"
+    },
+  
+    "base_topics": [
+      "small_talk",
+      "treaty",
+      "industry",
+      "suspicion",
+      "private_alignment",
+      "pressure"
+    ],
+  
+    "characters": {
+      "henri_beaumont": {
+        "topics": [
+          "small_talk",
+          "treaty",
+          "industry",
+          "suspicion",
+          "private_alignment",
+          "pressure",
+          "french_concessions",
+          "german_channel"
+        ],
+        "unlock_conditions": {
+          "private_alignment": ["trust>=1"],
+          "pressure": ["trust<=-1"],
+          "french_concessions": ["player_knows:france_concessions"],
+          "german_channel": ["trust>=1", "event:telegram_arrival"]
+        },
+        "effects": {
+          "small_talk": ["trust+1"],
+          "treaty": ["unlock_flag:treaty_progress"],
+          "private_alignment": ["flag:alliance_formed"],
+          "pressure": ["trust-1", "flag:suspicion"],
+          "french_concessions": ["flag:france_gains_advantage"],
+          "german_channel": ["flag:secret_channel"]
+        }
+      },
+  
+      "friedrich_keller": {
+        "topics": [
+          "small_talk",
+          "treaty",
+          "industry",
+          "suspicion",
+          "private_alignment",
+          "pressure",
+          "hidden_terms",
+          "industrial_pipeline"
+        ],
+        "unlock_conditions": {
+          "hidden_terms": ["trust>=1"],
+          "industrial_pipeline": ["player_knows:industrial_link"],
+          "pressure": ["trust<=-1"]
+        },
+        "effects": {
+          "hidden_terms": ["flag:germany_gains_advantage"],
+          "industrial_pipeline": ["flag:alliance_formed"],
+          "pressure": ["trust-1"]
+        }
+      },
+  
+      "edward_whitmore": {
+        "topics": [
+          "small_talk",
+          "treaty",
+          "industry",
+          "suspicion",
+          "private_alignment",
+          "pressure",
+          "balance_game",
+          "provocation"
+        ],
+        "unlock_conditions": {
+          "balance_game": ["event:telegram_arrival"],
+          "provocation": ["trust<=0"]
+        },
+        "effects": {
+          "balance_game": ["flag:balance_preserved"],
+          "provocation": ["flag:suspicion", "trust-1"]
+        }
+      },
+  
+      "arthur_bennett": {
+        "topics": [
+          "small_talk",
+          "treaty",
+          "industry",
+          "suspicion",
+          "private_alignment",
+          "pressure",
+          "targeting",
+          "subtle_manipulation"
+        ],
+        "unlock_conditions": {
+          "targeting": ["player_role:arthur_bennett"],
+          "subtle_manipulation": ["trust>=1"]
+        },
+        "effects": {
+          "targeting": ["flag:target_selected"],
+          "subtle_manipulation": ["flag:target_trust_high"],
+          "private_alignment": ["flag:target_isolated"],
+          "pressure": ["trust-1"]
+        }
+      },
+  
+      "klaus_reinhardt": {
+        "topics": [
+          "small_talk",
+          "treaty",
+          "industry",
+          "suspicion",
+          "private_alignment",
+          "pressure",
+          "technical_annex",
+          "german_alignment"
+        ],
+        "unlock_conditions": {
+          "technical_annex": ["player_knows:annex"],
+          "german_alignment": ["trust>=1"]
+        },
+        "effects": {
+          "technical_annex": ["flag:germany_gains_advantage"],
+          "german_alignment": ["flag:alliance_formed"]
+        }
+      },
+  
+      "luca_moretti": {
+        "topics": [
+          "small_talk",
+          "treaty",
+          "industry",
+          "suspicion",
+          "private_alignment",
+          "pressure",
+          "side_deal",
+          "market_access"
+        ],
+        "unlock_conditions": {
+          "side_deal": ["trust>=1"],
+          "market_access": ["event:first_drinks"]
+        },
+        "effects": {
+          "side_deal": ["flag:alliance_formed"],
+          "market_access": ["flag:industry_shift"]
+        }
+      },
+  
+      "count_von_ruden": {
+        "topics": [
+          "small_talk",
+          "treaty",
+          "suspicion",
+          "pressure",
+          "host_control",
+          "financial_layer",
+          "stability",
+          "disruption_risk"
+        ],
+        "unlock_conditions": {
+          "financial_layer": ["player_knows:bank_interest"],
+          "disruption_risk": ["event:telegram_arrival"],
+          "host_control": ["trust>=1"]
+        },
+        "effects": {
+          "host_control": ["flag:room_stabilized"],
+          "financial_layer": ["flag:secret_revealed"],
+          "disruption_risk": ["flag:suspicion"]
+        }
+      }
+    },
+  
+    "group_chats": {
+      "main_hall": {
+        "topics": [
+          "public_discussion",
+          "treaty_debate",
+          "tension"
+        ],
+        "effects": {
+          "treaty_debate": ["flag:treaty_progress"],
+          "tension": ["flag:global_tension"]
+        }
+      },
+      "balcony": {
+        "topics": [
+          "quiet_exchange",
+          "private_offer"
+        ],
+        "effects": {
+          "private_offer": ["flag:alliance_formed"]
+        }
+      },
+      "smoking_room": {
+        "topics": [
+          "candid_talk",
+          "rumor_exchange"
+        ],
+        "effects": {
+          "rumor_exchange": ["flag:rumor_spread"]
+        }
+      }
+    },
+  
+    "global_effects": {
+      "trust+": {
+        "description": "Increase trust with character"
+      },
+      "trust-": {
+        "description": "Decrease trust"
+      },
+      "flag": {
+        "description": "Set game state flag"
+      },
+      "unlock_flag": {
+        "description": "Enable global progression"
+      }
+    }
+  }

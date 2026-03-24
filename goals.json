@@ -1,0 +1,208 @@
+{
+    "global_flags": [
+      "treaty_signed",
+      "treaty_blocked",
+      "france_gains_advantage",
+      "germany_gains_advantage",
+      "balance_preserved",
+      "alliance_formed",
+      "secret_revealed",
+      "player_exposed",
+      "target_isolated",
+      "target_trust_high",
+      "poison_administered",
+      "wrong_target_poisoned",
+      "death_occurred",
+      "scandal_triggered"
+    ],
+  
+    "roles": {
+      "henri_beaumont": {
+        "main_goal": {
+          "id": "secure_treaty",
+          "description": {
+            "en": "Ensure the agreement is successfully signed",
+            "ru": "Добиться успешного подписания соглашения"
+          },
+          "conditions_success": ["treaty_signed"],
+          "conditions_fail": ["treaty_blocked"]
+        },
+        "hidden_goals": [
+          {
+            "id": "secure_french_advantage",
+            "description": {
+              "en": "Shape the agreement to benefit France",
+              "ru": "Сформировать соглашение в пользу Франции"
+            },
+            "conditions_success": ["france_gains_advantage"]
+          },
+          {
+            "id": "build_private_alliance",
+            "description": {
+              "en": "Establish a quiet alignment with another key figure",
+              "ru": "Установить неформальный союз с одной из ключевых фигур"
+            },
+            "conditions_success": ["alliance_formed"]
+          }
+        ],
+        "fears": [
+          {
+            "id": "germany_dominates",
+            "description": {
+              "en": "Germany gains clear upper hand",
+              "ru": "Германия получает явное преимущество"
+            },
+            "conditions_trigger": ["germany_gains_advantage"]
+          },
+          {
+            "id": "public_scandal",
+            "description": {
+              "en": "The evening collapses into scandal",
+              "ru": "Вечер срывается в публичный скандал"
+            },
+            "conditions_trigger": ["scandal_triggered"]
+          }
+        ]
+      },
+  
+      "klaus_reinhardt": {
+        "main_goal": {
+          "id": "secure_contracts",
+          "description": {
+            "en": "Ensure the agreement creates industrial opportunities",
+            "ru": "Добиться, чтобы соглашение открыло промышленные возможности"
+          },
+          "conditions_success": ["treaty_signed", "germany_gains_advantage"],
+          "conditions_fail": ["treaty_blocked"]
+        },
+        "hidden_goals": [
+          {
+            "id": "strengthen_german_position",
+            "description": {
+              "en": "Align diplomatic and industrial influence",
+              "ru": "Синхронизировать дипломатическое и промышленное влияние"
+            },
+            "conditions_success": ["germany_gains_advantage"]
+          },
+          {
+            "id": "outmaneuver_rival",
+            "description": {
+              "en": "Prevent Moretti from gaining access",
+              "ru": "Не допустить, чтобы Моретти получил доступ"
+            },
+            "conditions_success": ["alliance_formed"]
+          }
+        ],
+        "fears": [
+          {
+            "id": "deal_collapse",
+            "description": {
+              "en": "The agreement fails completely",
+              "ru": "Соглашение полностью проваливается"
+            },
+            "conditions_trigger": ["treaty_blocked"]
+          },
+          {
+            "id": "exposure",
+            "description": {
+              "en": "Hidden cooperation is revealed",
+              "ru": "Скрытое сотрудничество раскрыто"
+            },
+            "conditions_trigger": ["secret_revealed"]
+          }
+        ]
+      },
+  
+      "arthur_bennett": {
+        "main_goal": {
+          "id": "assassinate_diplomat",
+          "description": {
+            "en": "Ensure a diplomat is killed using poison",
+            "ru": "Добиться убийства дипломата с помощью яда"
+          },
+          "conditions_success": [
+            "poison_administered",
+            "death_occurred",
+            "correct_target"
+          ],
+          "conditions_fail": [
+            "wrong_target_poisoned",
+            "no_death"
+          ]
+        },
+        "hidden_goals": [
+          {
+            "id": "cause_scandal",
+            "description": {
+              "en": "Ensure the death results in diplomatic breakdown",
+              "ru": "Добиться, чтобы смерть привела к дипломатическому срыву"
+            },
+            "conditions_success": ["scandal_triggered"]
+          },
+          {
+            "id": "remain_hidden",
+            "description": {
+              "en": "Avoid being identified as the perpetrator",
+              "ru": "Избежать разоблачения как исполнителя"
+            },
+            "conditions_success": ["not_player_exposed"]
+          }
+        ],
+        "fears": [
+          {
+            "id": "exposure",
+            "description": {
+              "en": "Your true identity is discovered",
+              "ru": "Ваша настоящая личность раскрыта"
+            },
+            "conditions_trigger": ["player_exposed"]
+          },
+          {
+            "id": "loss_of_control",
+            "description": {
+              "en": "The situation becomes unpredictable",
+              "ru": "Ситуация выходит из-под контроля"
+            },
+            "conditions_trigger": ["wrong_target_poisoned"]
+          }
+        ]
+      }
+    },
+  
+    "death_logic": {
+      "description": "One character dies at the end of the round due to poisoning",
+  
+      "rules": [
+        {
+          "id": "poison_success",
+          "conditions": [
+            "poison_administered",
+            "target_isolated",
+            "target_trust_high"
+          ],
+          "result": "correct_target"
+        },
+        {
+          "id": "poison_misdirected",
+          "conditions": [
+            "poison_administered",
+            "not_target_isolated"
+          ],
+          "result": "wrong_target_poisoned"
+        },
+        {
+          "id": "no_poison",
+          "conditions": [
+            "not_poison_administered"
+          ],
+          "result": "no_death"
+        }
+      ]
+    },
+  
+    "evaluation": {
+      "type": "binary",
+      "visibility": "partial",
+      "notes": "Player is not shown full evaluation logic. Results are implied through narrative feedback rather than explicit scoring."
+    }
+  }

@@ -1,0 +1,296 @@
+{
+    "scale": {
+      "trust_min": -2,
+      "trust_max": 2,
+      "meaning": {
+        "-2": "hostile",
+        "-1": "suspicious",
+        "0": "neutral",
+        "1": "warm",
+        "2": "strong_trust"
+      }
+    },
+    "characters": {
+      "henri_beaumont": {
+        "public_stance": {
+          "friedrich_keller": "professional",
+          "edward_whitmore": "courteous",
+          "arthur_bennett": "polite",
+          "klaus_reinhardt": "reserved",
+          "luca_moretti": "distant",
+          "count_von_ruden": "respectful"
+        },
+        "private_stance": {
+          "friedrich_keller": "cautious_partner",
+          "edward_whitmore": "strategic_observer",
+          "arthur_bennett": "useful_briton",
+          "klaus_reinhardt": "industrial_risk",
+          "luca_moretti": "opportunist",
+          "count_von_ruden": "quiet_ally"
+        },
+        "trust": {
+          "friedrich_keller": 0,
+          "edward_whitmore": -1,
+          "arthur_bennett": 0,
+          "klaus_reinhardt": -1,
+          "luca_moretti": -1,
+          "count_von_ruden": 1
+        },
+        "tags": {
+          "friedrich_keller": ["negotiates_with"],
+          "edward_whitmore": ["watches_closely"],
+          "arthur_bennett": ["keeps_close"],
+          "klaus_reinhardt": ["suspects_indirect_influence"],
+          "luca_moretti": ["dismisses"],
+          "count_von_ruden": ["secret_understanding"]
+        },
+        "owes_favor_to": ["count_von_ruden"],
+        "is_afraid_of": ["british_obstruction", "public_scandal"],
+        "can_be_compromised_by": ["private_concessions_to_germany"]
+      },
+  
+      "friedrich_keller": {
+        "public_stance": {
+          "henri_beaumont": "professional",
+          "edward_whitmore": "formal",
+          "arthur_bennett": "neutral",
+          "klaus_reinhardt": "respectful",
+          "luca_moretti": "guarded",
+          "count_von_ruden": "correct"
+        },
+        "private_stance": {
+          "henri_beaumont": "temporary_partner",
+          "edward_whitmore": "obstacle",
+          "arthur_bennett": "minor_figure",
+          "klaus_reinhardt": "reliable_asset",
+          "luca_moretti": "backup_option",
+          "count_von_ruden": "useful_host"
+        },
+        "trust": {
+          "henri_beaumont": 0,
+          "edward_whitmore": -1,
+          "arthur_bennett": 0,
+          "klaus_reinhardt": 2,
+          "luca_moretti": -1,
+          "count_von_ruden": 0
+        },
+        "tags": {
+          "henri_beaumont": ["negotiates_with"],
+          "edward_whitmore": ["suspects_interference"],
+          "arthur_bennett": ["underestimates"],
+          "klaus_reinhardt": ["secret_partner"],
+          "luca_moretti": ["keeps_available"],
+          "count_von_ruden": ["respects_venue_control"]
+        },
+        "owes_favor_to": ["klaus_reinhardt"],
+        "is_afraid_of": ["leak_of_hidden_terms"],
+        "can_be_compromised_by": ["proof_of_private_deal_with_reinhardt"]
+      },
+  
+      "edward_whitmore": {
+        "public_stance": {
+          "henri_beaumont": "civil",
+          "friedrich_keller": "civil",
+          "arthur_bennett": "warm",
+          "klaus_reinhardt": "cool",
+          "luca_moretti": "amused",
+          "count_von_ruden": "gracious"
+        },
+        "private_stance": {
+          "henri_beaumont": "potential_rival",
+          "friedrich_keller": "potential_rival",
+          "arthur_bennett": "valuable_contact",
+          "klaus_reinhardt": "german_extension",
+          "luca_moretti": "unreliable_noise",
+          "count_von_ruden": "too_neutral_to_trust"
+        },
+        "trust": {
+          "henri_beaumont": -1,
+          "friedrich_keller": -1,
+          "arthur_bennett": 1,
+          "klaus_reinhardt": -1,
+          "luca_moretti": -1,
+          "count_von_ruden": 0
+        },
+        "tags": {
+          "henri_beaumont": ["tests"],
+          "friedrich_keller": ["tests"],
+          "arthur_bennett": ["prefers_company"],
+          "klaus_reinhardt": ["links_to_keller"],
+          "luca_moretti": ["dismisses_as_vulgar"],
+          "count_von_ruden": ["politely_distrusts"]
+        },
+        "owes_favor_to": [],
+        "is_afraid_of": ["franco_german_alignment"],
+        "can_be_compromised_by": ["appearance_of_british_interference"]
+      },
+  
+      "arthur_bennett": {
+        "public_stance": {
+          "henri_beaumont": "friendly",
+          "friedrich_keller": "respectful",
+          "edward_whitmore": "close",
+          "klaus_reinhardt": "professional",
+          "luca_moretti": "easygoing",
+          "count_von_ruden": "charming"
+        },
+        "private_stance": {
+          "henri_beaumont": "potential_target",
+          "friedrich_keller": "potential_target",
+          "edward_whitmore": "useful_cover",
+          "klaus_reinhardt": "watchful",
+          "luca_moretti": "distraction",
+          "count_von_ruden": "environment_to_exploit"
+        },
+        "trust": {
+          "henri_beaumont": 0,
+          "friedrich_keller": 0,
+          "edward_whitmore": 1,
+          "klaus_reinhardt": 0,
+          "luca_moretti": 0,
+          "count_von_ruden": 0
+        },
+        "tags": {
+          "henri_beaumont": ["flatters"],
+          "friedrich_keller": ["studies"],
+          "edward_whitmore": ["keeps_close"],
+          "klaus_reinhardt": ["watches"],
+          "luca_moretti": ["can_use_as_noise"],
+          "count_von_ruden": ["uses_hospitality"]
+        },
+        "owes_favor_to": [],
+        "is_afraid_of": ["exposure", "loss_of_control"],
+        "can_be_compromised_by": ["contradictions_in_identity", "physical_evidence_of_poisoning"]
+      },
+  
+      "klaus_reinhardt": {
+        "public_stance": {
+          "henri_beaumont": "measured",
+          "friedrich_keller": "respectful",
+          "edward_whitmore": "cold",
+          "arthur_bennett": "professional",
+          "luca_moretti": "competitive",
+          "count_von_ruden": "formal"
+        },
+        "private_stance": {
+          "henri_beaumont": "possible_route_to_contract",
+          "friedrich_keller": "political_partner",
+          "edward_whitmore": "obstructionist",
+          "arthur_bennett": "hard_to_read",
+          "luca_moretti": "commercial_rival",
+          "count_von_ruden": "keeper_of_access"
+        },
+        "trust": {
+          "henri_beaumont": 0,
+          "friedrich_keller": 2,
+          "edward_whitmore": -1,
+          "arthur_bennett": 0,
+          "luca_moretti": -1,
+          "count_von_ruden": 0
+        },
+        "tags": {
+          "henri_beaumont": ["courts_carefully"],
+          "friedrich_keller": ["secret_partner"],
+          "edward_whitmore": ["resentful_of"],
+          "arthur_bennett": ["observes"],
+          "luca_moretti": ["competes_with"],
+          "count_von_ruden": ["needs_access_from"]
+        },
+        "owes_favor_to": ["friedrich_keller"],
+        "is_afraid_of": ["contract_failure", "exposure_of_backchannel"],
+        "can_be_compromised_by": ["documents_linking_him_to_keller"]
+      },
+  
+      "luca_moretti": {
+        "public_stance": {
+          "henri_beaumont": "playful",
+          "friedrich_keller": "courteous",
+          "edward_whitmore": "lightly_mocking",
+          "arthur_bennett": "warm",
+          "klaus_reinhardt": "competitive",
+          "count_von_ruden": "admiring"
+        },
+        "private_stance": {
+          "henri_beaumont": "possible_buyer",
+          "friedrich_keller": "possible_buyer",
+          "edward_whitmore": "annoying_arbiter",
+          "arthur_bennett": "potential_dealmaker",
+          "klaus_reinhardt": "primary_rival",
+          "count_von_ruden": "door_to_the_room"
+        },
+        "trust": {
+          "henri_beaumont": 0,
+          "friedrich_keller": 0,
+          "edward_whitmore": -1,
+          "arthur_bennett": 1,
+          "klaus_reinhardt": -1,
+          "count_von_ruden": 0
+        },
+        "tags": {
+          "henri_beaumont": ["pitches_to"],
+          "friedrich_keller": ["pitches_to"],
+          "edward_whitmore": ["dislikes_tone_of"],
+          "arthur_bennett": ["tries_to_bond_with"],
+          "klaus_reinhardt": ["competes_with"],
+          "count_von_ruden": ["seeks_approval_from"]
+        },
+        "owes_favor_to": [],
+        "is_afraid_of": ["being_excluded", "being_laughed_out_of_negotiation"],
+        "can_be_compromised_by": ["evidence_of_side_deals"]
+      },
+  
+      "count_von_ruden": {
+        "public_stance": {
+          "henri_beaumont": "gracious",
+          "friedrich_keller": "gracious",
+          "edward_whitmore": "gracious",
+          "arthur_bennett": "welcoming",
+          "klaus_reinhardt": "welcoming",
+          "luca_moretti": "welcoming"
+        },
+        "private_stance": {
+          "henri_beaumont": "preferred_signatory",
+          "friedrich_keller": "necessary_but_risky",
+          "edward_whitmore": "potential_spoiler",
+          "arthur_bennett": "pleasant_unknown",
+          "klaus_reinhardt": "instrument_of_german_pressure",
+          "luca_moretti": "chaotic_variable"
+        },
+        "trust": {
+          "henri_beaumont": 1,
+          "friedrich_keller": 0,
+          "edward_whitmore": -1,
+          "arthur_bennett": 0,
+          "klaus_reinhardt": 0,
+          "luca_moretti": -1
+        },
+        "tags": {
+          "henri_beaumont": ["secret_understanding"],
+          "friedrich_keller": ["must_manage"],
+          "edward_whitmore": ["fears_disruption_from"],
+          "arthur_bennett": ["has_not_placed"],
+          "klaus_reinhardt": ["allows_presence_of"],
+          "luca_moretti": ["tolerates"]
+        },
+        "owes_favor_to": [],
+        "is_afraid_of": ["public_scandal", "failed_signing", "financial_exposure"],
+        "can_be_compromised_by": ["proof_of_hidden_bank_interest"]
+      }
+    },
+    "hidden_alliances": [
+      {
+        "id": "alliance_host_france",
+        "members": ["count_von_ruden", "henri_beaumont"],
+        "type": "quiet_alignment",
+        "purpose": "Increase chances of signing the agreement under favorable Swiss-French terms",
+        "visibility": "hidden"
+      },
+      {
+        "id": "alliance_germany_industry",
+        "members": ["friedrich_keller", "klaus_reinhardt"],
+        "type": "political_industrial_channel",
+        "purpose": "Secure commercial access and embed favorable hidden clauses",
+        "visibility": "hidden"
+      }
+    ]
+  }

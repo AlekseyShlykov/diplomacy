@@ -1,0 +1,149 @@
+{
+    "henri_beaumont": {
+      "name": "Henri Beaumont",
+      "role": {
+        "en": "ambassador",
+        "ru": "посол"
+      },
+      "country": {
+        "en": "France",
+        "ru": "Франция"
+      },
+      "playable": true,
+      "style": "polite_strategic",
+      "traits": ["diplomatic", "calculating"],
+      "goals": {
+        "main": "Sign the agreement",
+        "hidden": "Secure advantage for France",
+        "avoid": "Germany gaining dominance"
+      },
+      "secrets": ["Willing to concede more than stated"]
+    },
+  
+    "friedrich_keller": {
+      "name": "Friedrich Keller",
+      "role": {
+        "en": "ambassador",
+        "ru": "посол"
+      },
+      "country": {
+        "en": "Germany",
+        "ru": "Германия"
+      },
+      "playable": false,
+      "style": "cold_pragmatic",
+      "traits": ["analytical", "distant"],
+      "goals": {
+        "main": "Secure favorable agreement",
+        "hidden": "Embed hidden conditions",
+        "avoid": "Exposure of intentions"
+      },
+      "secrets": ["Has prior deal with Reinhardt"]
+    },
+  
+    "edward_whitmore": {
+      "name": "Edward Whitmore",
+      "role": {
+        "en": "ambassador",
+        "ru": "посол"
+      },
+      "country": {
+        "en": "Britain",
+        "ru": "Британия"
+      },
+      "playable": false,
+      "style": "ironic_observer",
+      "traits": ["witty", "subtle"],
+      "goals": {
+        "main": "Maintain balance",
+        "hidden": "Prevent alliances",
+        "avoid": "Any side gaining dominance"
+      },
+      "secrets": ["Manipulates both sides quietly"]
+    },
+  
+    "arthur_bennett": {
+      "name": "Arthur Bennett",
+      "role": {
+        "en": "industrialist",
+        "ru": "промышленник"
+      },
+      "country": {
+        "en": "Britain",
+        "ru": "Британия"
+      },
+      "playable": true,
+      "style": "charming_secretive",
+      "traits": ["charismatic", "deceptive"],
+      "goals": {
+        "main": "Sabotage the agreement",
+        "hidden": "Assassinate a diplomat",
+        "avoid": "Being exposed"
+      },
+      "secrets": ["Agent of intelligence service"],
+      "abilities": ["poison"]
+    },
+  
+    "klaus_reinhardt": {
+      "name": "Klaus Reinhardt",
+      "role": {
+        "en": "industrialist",
+        "ru": "промышленник"
+      },
+      "country": {
+        "en": "Germany",
+        "ru": "Германия"
+      },
+      "playable": true,
+      "style": "technical_precise",
+      "traits": ["logical", "controlled"],
+      "goals": {
+        "main": "Secure industrial contracts",
+        "hidden": "Strengthen German influence",
+        "avoid": "Deal collapse"
+      },
+      "secrets": ["Aligned with Keller"]
+    },
+  
+    "luca_moretti": {
+      "name": "Luca Moretti",
+      "role": {
+        "en": "industrialist",
+        "ru": "промышленник"
+      },
+      "country": {
+        "en": "Italy",
+        "ru": "Италия"
+      },
+      "playable": false,
+      "style": "aggressive_opportunist",
+      "traits": ["emotional", "ambitious"],
+      "goals": {
+        "main": "Enter agreement",
+        "hidden": "Make private deal",
+        "avoid": "Being excluded"
+      },
+      "secrets": ["Ready to betray any side"]
+    },
+  
+    "count_von_ruden": {
+      "name": "Count Elias von Rüden",
+      "role": {
+        "en": "host",
+        "ru": "хозяин"
+      },
+      "country": {
+        "en": "Switzerland",
+        "ru": "Швейцария"
+      },
+      "playable": false,
+      "style": "elegant_controlled",
+      "traits": ["composed", "observant"],
+      "goals": {
+        "main": "Ensure agreement is signed",
+        "hidden": "Profit via financial influence",
+        "avoid": "Public scandal"
+      },
+      "secrets": ["Knows more than he reveals"]
+    }
+  }

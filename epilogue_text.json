@@ -1,0 +1,48 @@
+{
+    "slides": [
+      {
+        "id": "epilogue_1",
+        "duration": 4000,
+        "text": {
+          "en": "A single moment breaks the evening. The balance is gone.",
+          "ru": "Один момент разрушает вечер. Баланс нарушен."
+        }
+      },
+      {
+        "id": "epilogue_2",
+        "duration": 5000,
+        "text": {
+          "en": "What follows will reshape alliances, trust, and the future itself.",
+          "ru": "То, что последует дальше, изменит союзы, доверие и само будущее."
+        }
+      }
+    ],
+    "cta": {
+      "title": {
+        "en": "The story continues.",
+        "ru": "История продолжается."
+      },
+      "description": {
+        "en": "Leave your email to be notified when the next chapter is available.",
+        "ru": "Оставьте email, чтобы узнать, когда выйдет продолжение."
+      },
+      "placeholder": {
+        "en": "Enter your email",
+        "ru": "Введите ваш email"
+      },
+      "button": {
+        "en": "Notify me",
+        "ru": "Сообщить мне"
+      },
+      "note": {
+        "en": "No spam. Only updates about the game.",
+        "ru": "Без спама. Только новости об игре."
+      }
+    },
+    "settings": {
+      "text_position": "bottom",
+      "text_animation": "typewriter",
+      "fade_between_slides": true,
+      "show_cta_after_slides": true
+    }
+  }

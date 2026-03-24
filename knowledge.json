@@ -1,0 +1,524 @@
+{
+  "public_facts": [
+    {
+      "en": "The dinner takes place in Switzerland at the private residence of Count Elias von Ruden.",
+      "ru": "Ужин проходит в Швейцарии в частной резиденции графа Элиаса фон Рудена."
+    },
+    {
+      "en": "The guests have gathered to discuss a proposed economic agreement between European powers.",
+      "ru": "Гости собрались, чтобы обсудить предлагаемое экономическое соглашение между европейскими державами."
+    },
+    {
+      "en": "The agreement is presented as a way to reduce the risk of war through mutual economic interdependence.",
+      "ru": "Соглашение подают как способ снизить риск войны через экономическую взаимозависимость."
+    },
+    {
+      "en": "The atmosphere is polite, but the negotiations are tense.",
+      "ru": "Атмосфера вежливая, но переговоры напряженные."
+    },
+    {
+      "en": "Industrialists are present because any agreement may lead to major infrastructure and communications contracts.",
+      "ru": "Промышленники присутствуют, потому что любое соглашение может привести к заключению крупных контрактов на инфраструктуру и связь."
+    },
+    {
+      "en": "Count von Ruden wants the evening to end with political progress and no public scandal.",
+      "ru": "Граф фон Руден хочет, чтобы вечер завершился политическим прогрессом, а не публичным скандалом."
+    }
+  ],
+  "global_secrets": [
+    {
+      "en": "France and Germany have already explored limited private concessions before the dinner.",
+      "ru": "Франция и Германия еще до ужина обсудили ограниченные взаимные уступки."
+    },
+    {
+      "en": "Germany intends to secure hidden economic advantages inside the proposed agreement.",
+      "ru": "Германия намерена обеспечить скрытые экономические преимущества внутри предлагаемого соглашения."
+    },
+    {
+      "en": "Britain is wary of any arrangement that would allow France and Germany to grow too close.",
+      "ru": "Британия опасается любых договоренностей, которые позволят Франции и Германии слишком сблизиться."
+    },
+    {
+      "en": "Arthur Bennett is operating under a false identity as an industrialist but is in fact acting on behalf of an intelligence service.",
+      "ru": "Артур Беннетт действует под личиной промышленника, но на деле работает на разведку."
+    },
+    {
+      "en": "A murder is being prepared through poison delivered in one of the drinks served near the end of the round.",
+      "ru": "Убийство готовится с помощью яда, добавленного в один из напитков, подаваемых ближе к концу раунда."
+    },
+    {
+      "en": "Count von Ruden has private financial interests tied to the success and final shape of the agreement.",
+      "ru": "У графа фон Рудена есть частные финансовые интересы, связанные с успехом и окончательной формой соглашения."
+    }
+  ],
+  "rumor_pool": [
+    {
+      "en": "Two of the guests may have met privately before arriving in Switzerland.",
+      "ru": "Двое из гостей, возможно, встретились наедине перед прибытием в Швейцарию."
+    },
+    {
+      "en": "One version of the draft agreement contains clauses that not everyone has seen.",
+      "ru": "В одной из версий проекта соглашения есть пункты, которые не все видели."
+    },
+    {
+      "en": "A British guest seems more interested in private conversations than in the formal discussion.",
+      "ru": "Британский гость, похоже, больше заинтересован в частных беседах, чем в официальном обсуждении."
+    },
+    {
+      "en": "One of the industrialists is desperate enough to support any side that offers him access.",
+      "ru": "Один из промышленников настолько отчаялся, что поддерживает любую сторону, которая предлагает ему доступ."
+    },
+    {
+      "en": "The host may have financial reasons to prefer a specific outcome.",
+      "ru": "У принимающей стороны могут быть финансовые причины предпочесть конкретный результат."
+    },
+    {
+      "en": "One guest is not quite who he claims to be.",
+      "ru": "Один гость не совсем тот, за кого себя выдает."
+    },
+    {
+      "en": "Someone in the room believes the treaty should never be signed.",
+      "ru": "Кто-то в зале считает, что договор никогда не следует подписывать."
+    },
+    {
+      "en": "A side agreement involving industry may already exist.",
+      "ru": "Возможно, уже существует дополнительное соглашение с участием промышленности."
+    },
+    {
+      "en": "Not every guest intends to stay loyal to their national side.",
+      "ru": "Не каждый гость намерен оставаться верным своей стороне."
+    },
+    {
+      "en": "The final drinks service may create an opportunity for something more than conversation.",
+      "ru": "Заключительные напитки могут создать возможность для чего-то большего, чем просто разговор."
+    }
+  ],
+  "knowledge_by_character": {
+    "henri_beaumont": {
+      "facts": [
+        {
+          "en": "France is prepared to make limited concessions if that secures the treaty tonight.",
+          "ru": "Франция готова пойти на ограниченные уступки, если это обеспечит подписание договора сегодня вечером."
+        },
+        {
+          "en": "Friedrich Keller is more flexible in private than he appears in public.",
+          "ru": "Наедине Фридрих Келлер куда гибче, чем на публике."
+        },
+        {
+          "en": "Britain is likely to resist any arrangement that brings France and Germany too close.",
+          "ru": "Великобритания, скорее всего, будет сопротивляться любому соглашению, которое слишком сближает Францию ​​и Германию."
+        }
+      ],
+      "rumors": [
+        {
+          "en": "One of the industrialists may already be influencing the diplomatic process from behind the scenes.",
+          "ru": "Кто-то из промышленников, возможно, уже влияет на дипломатический процесс из-за кулис."
+        },
+        {
+          "en": "Count von Ruden prefers a successful signing but may not be politically neutral.",
+          "ru": "Граф фон Руден предпочитает успешное подписание, но не может быть политически нейтральным."
+        }
+      ],
+      "secrets": [
+        {
+          "en": "Henri has privately signaled willingness to soften one French demand.",
+          "ru": "Анри в частном порядке заявил о готовности смягчить одно требование Франции."
+        },
+        {
+          "en": "Henri suspects the formal discussion is only half of the real negotiation.",
+          "ru": "Анри подозревает, что формальное обсуждение — это только половина реальных переговоров."
+        }
+      ],
+      "unique_truth": {
+        "en": "Henri knows that a narrowly framed treaty could pass tonight if Germany accepts symbolic rather than visible dominance.",
+        "ru": "Анри знает, что договор с узкими рамками может быть принят сегодня вечером, если Германия согласится на символическое, а не видимое доминирование."
+      },
+      "starting_briefing": {
+        "en": "You are here to secure the agreement without letting France appear weak. You know the room contains competing interests beyond diplomacy, and you suspect Britain may try to slow or fracture the talks.",
+        "ru": "Вы здесь для того, чтобы обеспечить соглашение, не позволяя Франции показаться слабой. Вы знаете, что в этой комнате присутствуют конкурирующие интересы, выходящие за рамки дипломатии, и вы подозреваете, что Великобритания может попытаться замедлить или сорвать переговоры."
+      }
+    },
+    "friedrich_keller": {
+      "facts": [
+        {
+          "en": "Germany wants the treaty, but only if hidden implementation details favor German industry.",
+          "ru": "Германия хочет заключить договор, но только в том случае, если скрытые детали его реализации будут благоприятствовать немецкой промышленности."
+        },
+        {
+          "en": "Klaus Reinhardt can help turn diplomatic language into commercial leverage.",
+          "ru": "Клаус Рейнхардт может помочь превратить дипломатический язык в коммерческий рычаг."
+        },
+        {
+          "en": "Britain will oppose any structure that makes Franco-German coordination too strong.",
+          "ru": "Великобритания будет выступать против любой структуры, которая делает франко-германскую координацию слишком сильной."
+        }
+      ],
+      "rumors": [
+        {
+          "en": "Henri Beaumont may be willing to concede more than he publicly admits.",
+          "ru": "Возможно, Анри Бомон готов уступить больше, чем говорит вслух."
+        },
+        {
+          "en": "The host has interests that go beyond hospitality.",
+          "ru": "Интересы хозяина выходят за рамки гостеприимства."
+        }
+      ],
+      "secrets": [
+        {
+          "en": "Friedrich has already discussed possible hidden clauses with Klaus Reinhardt.",
+          "ru": "Фридрих уже обсуждал возможные скрытые пункты с Клаусом Рейнхардтом."
+        },
+        {
+          "en": "Friedrich believes the evening can still be salvaged even if the public mood deteriorates.",
+          "ru": "Фридрих считает, что вечер еще можно спасти, даже если настроение общественности ухудшится."
+        }
+      ],
+      "unique_truth": {
+        "en": "Friedrich knows exactly which implementation clause would quietly shift long-term advantage toward Germany.",
+        "ru": "Фридрих точно знает, какой пункт реализации незаметно переместит долгосрочное преимущество в сторону Германии."
+      },
+      "starting_briefing": {
+        "en": "",
+        "ru": ""
+      }
+    },
+    "edward_whitmore": {
+      "facts": [
+        {
+          "en": "If France and Germany align too closely, Britain loses strategic influence.",
+          "ru": "Если Франция и Германия объединятся слишком близко, Великобритания потеряет стратегическое влияние."
+        },
+        {
+          "en": "Arthur Bennett is socially useful and appears comfortable moving between camps.",
+          "ru": "Артур Беннетт социально полезен и, похоже, комфортно перемещается из одного лагеря в другой."
+        },
+        {
+          "en": "Several guests are treating the dinner as a market, not a peace effort.",
+          "ru": "Некоторые гости относятся к ужину как к рынку, а не как к мирному усилию."
+        }
+      ],
+      "rumors": [
+        {
+          "en": "France and Germany may already have exchanged informal promises.",
+          "ru": "Франция и Германия, возможно, уже обменялись неофициальными обещаниями."
+        },
+        {
+          "en": "One industrialist is closer to the diplomatic core than he should be.",
+          "ru": "Один промышленник ближе к дипломатическому ядру, чем следовало бы."
+        }
+      ],
+      "secrets": [
+        {
+          "en": "Edward intends to preserve balance rather than help any side win decisively.",
+          "ru": "Эдвард намерен сохранить баланс, а не помочь какой-либо стороне одержать решительную победу."
+        },
+        {
+          "en": "Edward is deliberately encouraging others to underestimate how closely he is reading the room.",
+          "ru": "Эдвард намеренно дает другим недооценить, как тонко он чувствует настроение в комнате."
+        }
+      ],
+      "unique_truth": {
+        "en": "Edward can tell that at least one person in the room wants the treaty delayed rather than revised.",
+          "ru": "Эдвард видит: как минимум один человек в зале хочет не пересмотра, а срыва сроков."
+      },
+      "starting_briefing": {
+        "en": "",
+        "ru": ""
+      }
+    },
+    "arthur_bennett": {
+      "facts": [
+        {
+          "en": "You are not here as a businessman alone. Your real mission is to prevent the agreement from being signed.",
+          "ru": "Вы здесь не только как бизнесмен. Ваша настоящая задача — не допустить подписания соглашения."
+        },
+        {
+          "en": "Your superiors consider a diplomatic scandal preferable to a successful treaty.",
+          "ru": "Ваше начальство считает дипломатический скандал предпочтительнее успешного договора."
+        },
+        {
+          "en": "The final drinks service provides the cleanest opportunity to deliver poison.",
+          "ru": "Подача последних напитков - самый удобный момент, чтобы подмешать яд."
+        }
+      ],
+      "rumors": [
+        {
+          "en": "The French ambassador may be the easiest target politically, but not necessarily the easiest target physically.",
+          "ru": "Французский посол, возможно, самая удобная политическая цель, но не самая доступная физически."
+        },
+        {
+          "en": "The host suspects that the evening may be vulnerable to disruption, though he does not know your role.",
+          "ru": "Хозяин подозревает, что вечер могут сорвать, но вашей роли не знает."
+        }
+      ],
+      "secrets": [
+        {
+          "en": "You are an intelligence asset operating under commercial cover.",
+          "ru": "Вы — агент разведки, действующий под коммерческим прикрытием."
+        },
+        {
+          "en": "You have both the poison and a plausible social reason to move between private conversations.",
+          "ru": "У вас есть и яд, и правдоподобный повод переходить от одной частной беседы к другой."
+        },
+        {
+          "en": "If your preferred victim becomes unreachable, you may need to improvise.",
+          "ru": "Если желаемая жертва становится недоступной, возможно, вам придется импровизировать."
+        }
+      ],
+      "unique_truth": {
+        "en": "Arthur knows that the murder does not have to target a specific ambassador in advance; the best political result depends on who becomes exposed, isolated, or trusted enough to accept the fatal drink.",
+        "ru": "Артур знает: заранее выбирать конкретного посла не обязательно; лучший политический эффект зависит от того, кто окажется уязвим, изолирован и достаточно доверчив, чтобы принять смертельный напиток."
+      },
+      "starting_briefing": {
+        "en": "You are here under a false identity. Your mission is to sabotage the agreement. If needed, you are authorized to kill one of the diplomats by poison during the final drinks service. Your ideal outcome is scandal, confusion, and a collapsed signing.",
+        "ru": "Вы здесь под вымышленным именем. Ваша задача - сорвать соглашение. При необходимости вы уполномочены отравить одного из дипломатов во время подачи последних напитков. Идеальный итог - скандал, хаос и сорванное подписание."
+      }
+    },
+    "klaus_reinhardt": {
+      "facts": [
+        {
+          "en": "Industrial access matters as much as the treaty language itself.",
+          "ru": "Промышленный доступ имеет такое же значение, как и сам текст договора."
+        },
+        {
+          "en": "Friedrich Keller is open to arrangements that would strengthen German commercial position after signing.",
+          "ru": "Фридрих Келлер открыт для договоренностей, которые после подписания укрепят коммерческую позицию Германии."
+        },
+        {
+          "en": "Luca Moretti is opportunistic and may try to attach himself to whichever side looks strongest.",
+          "ru": "Лука Моретти - приспособленец и может примкнуть к той стороне, что выглядит сильнее."
+        }
+      ],
+      "rumors": [
+        {
+          "en": "France may be more negotiable than Britain assumes.",
+          "ru": "Франция, возможно, более склонна к переговорам, чем предполагает Великобритания."
+        },
+        {
+          "en": "Arthur Bennett is more socially agile than most industrial men.",
+          "ru": "Артур Беннетт куда легче сходится с людьми, чем большинство промышленников."
+        }
+      ],
+      "secrets": [
+        {
+          "en": "Klaus has already discussed post-signing advantages with Keller.",
+          "ru": "Клаус уже обсудил с Келлером выгоды после подписания соглашения."
+        },
+        {
+          "en": "Klaus needs the treaty to survive long enough for contracts to become possible.",
+          "ru": "Клаусу нужно, чтобы договор просуществовал достаточно долго, чтобы контракты стали возможными."
+        }
+      ],
+      "unique_truth": {
+        "en": "Klaus knows that one technical annex, if shaped correctly, would determine who profits most from the treaty for years.",
+        "ru": "Клаус знает, что одно техническое приложение, если оно будет составлено правильно, на долгие годы определит, кто получит наибольшую выгоду от договора."
+      },
+      "starting_briefing": {
+        "en": "You are here to secure commercial advantage, not merely attend a diplomatic performance. You know Keller is useful, Moretti is dangerous, and every polite phrase in the room may hide a contract beneath it.",
+        "ru": "Вы здесь для того, чтобы получить коммерческую выгоду, а не просто присутствовать на дипломатическом представлении. Вы знаете, что Келлер полезен, Моретти опасен, и за каждой вежливой фразой в комнате может скрываться договор."
+      }
+    },
+    "luca_moretti": {
+      "facts": [
+        {
+          "en": "If the main powers reach agreement without him, he may be excluded from the real rewards.",
+          "ru": "Если основные державы достигнут соглашения без него, он может быть лишен реальных наград."
+        },
+        {
+          "en": "Klaus Reinhardt is his clearest industrial rival in the room.",
+          "ru": "Клаус Рейнхардт – его самый явный конкурент в индустрии."
+        },
+        {
+          "en": "Arthur Bennett is easier to approach informally than the diplomats.",
+          "ru": "С Артуром Беннеттом проще говорить неофициально, чем с дипломатами."
+        }
+      ],
+      "rumors": [
+        {
+          "en": "Someone may already have a private pathway into the final deal.",
+          "ru": "Возможно, у кого-то уже есть прямой неофициальный выход на финальную сделку."
+        },
+        {
+          "en": "The host dislikes disorder more than he admits.",
+          "ru": "Хозяин не любит беспорядка больше, чем признает."
+        }
+      ],
+      "secrets": [
+        {
+          "en": "Luca is willing to support almost any side if it wins him access.",
+          "ru": "Лука готов поддержать практически любую сторону, если она предоставит ему доступ."
+        },
+        {
+          "en": "Luca has hinted at multiple contradictory private offers.",
+          "ru": "Лука уже намекал на несколько взаимоисключающих частных предложений."
+        }
+      ],
+      "unique_truth": {
+        "en": "Luca knows that at least one guest has already listened to an offer they should never publicly admit hearing.",
+          "ru": "Лука знает: как минимум один гость уже выслушал предложение, о котором никогда не признается публично."
+      },
+      "starting_briefing": {
+        "en": "",
+        "ru": ""
+      }
+    },
+    "count_von_ruden": {
+      "facts": [
+        {
+          "en": "If the dinner collapses into scandal, both political and financial consequences may reach him personally.",
+          "ru": "Если ужин обернется скандалом, как политические, так и финансовые последствия могут коснуться его лично."
+        },
+        {
+          "en": "Several guests are using the evening for purposes beyond the formal treaty discussion.",
+          "ru": "Некоторые гости используют вечер для целей, выходящих за рамки формального обсуждения договора."
+        },
+        {
+          "en": "The final stage of the evening, including drinks and private circulation, is the least controllable part of the gathering.",
+          "ru": "Финал вечера - напитки и частные разговоры - хуже всего поддается контролю."
+        }
+      ],
+      "rumors": [
+        {
+          "en": "Someone in the house may be seeking to derail the signing entirely.",
+          "ru": "Кто-то в доме, возможно, пытается полностью сорвать подписание."
+        },
+        {
+          "en": "At least one side conversation tonight matters more than the formal room discussion.",
+          "ru": "Как минимум один разговор в стороне сегодня важнее официальной беседы в зале."
+        }
+      ],
+      "secrets": [
+        {
+          "en": "The Count has financial structures that would benefit from the agreement's success.",
+          "ru": "У графа есть финансовые структуры, которые выиграют от успеха соглашения."
+        },
+        {
+          "en": "He has maintained a quiet line of understanding with Henri Beaumont.",
+          "ru": "Он поддерживает негласное взаимопонимание с Анри Бомоном."
+        },
+        {
+          "en": "He suspects disruption is possible but lacks proof of method or perpetrator.",
+          "ru": "Он подозревает, что возможен срыв, но не знает ни способа, ни виновника."
+        }
+      ],
+      "unique_truth": {
+        "en": "The Count knows that if panic begins during the final service, social protocol will temporarily fail and control of the room will shift to whoever prepared for that moment.",
+          "ru": "Граф знает: если во время подачи последних напитков начнется паника, светские правила на время рухнут, и контроль над залом получит тот, кто к этому готов."
+      },
+      "starting_briefing": {
+        "en": "",
+        "ru": ""
+      }
+    }
+  },
+  "playable_roles_starting_knowledge": {
+    "henri_beaumont": {
+      "starting_facts": [
+        {
+          "en": "France is ready to negotiate seriously tonight.",
+          "ru": "Франция готова вести серьезные переговоры сегодня вечером."
+        },
+        {
+          "en": "Germany may accept a deal if given quiet room to maneuver.",
+          "ru": "Германия может пойти на сделку, если дать ей пространство для тихого маневра."
+        },
+        {
+          "en": "Britain is unlikely to support visible Franco-German alignment.",
+          "ru": "Великобритания вряд ли поддержит видимый франко-германский союз."
+        }
+      ],
+      "starting_rumors": [
+        {
+          "en": "One industrialist may already be tied to the political process.",
+          "ru": "Один промышленник, возможно, уже вовлечен в политический процесс."
+        },
+        {
+          "en": "The host wants success, but not only for noble reasons.",
+          "ru": "Хозяин хочет успеха, и не только из благородных побуждений."
+        }
+      ],
+      "starting_goal_awareness": [
+        {
+          "en": "Your public goal is to help secure the treaty.",
+          "ru": "Ваша общественная цель – помочь заключить договор."
+        },
+        {
+          "en": "Your private goal is to protect French leverage inside the agreement.",
+          "ru": "Ваша личная цель — защитить влияние Франции в рамках соглашения."
+        }
+      ]
+    },
+    "arthur_bennett": {
+      "starting_facts": [
+        {
+          "en": "Your cover identity is stable unless contradictions expose you.",
+          "ru": "Ваше прикрытие стабильно, пока противоречия не разоблачат вас."
+        },
+        {
+          "en": "You can act socially across factions without raising immediate suspicion.",
+          "ru": "Вы можете свободно общаться между лагерями и не вызывать мгновенных подозрений."
+        },
+        {
+          "en": "The final drinks service is your operational window.",
+          "ru": "Подача последних напитков - ваше окно для действия."
+        }
+      ],
+      "starting_rumors": [
+        {
+          "en": "The French ambassador may become vulnerable if isolated.",
+          "ru": "Французский посол может стать уязвимым в случае изоляции."
+        },
+        {
+          "en": "The host is alert to disruption, though not to you personally.",
+          "ru": "Хозяин предупреждает о нарушениях, но не о вас лично."
+        }
+      ],
+      "starting_goal_awareness": [
+        {
+          "en": "Your public role is commercial and informal.",
+          "ru": "Ваша общественная роль коммерческая и неформальная."
+        },
+        {
+          "en": "Your real mission is to sabotage the treaty and, if necessary, kill.",
+          "ru": "Ваша настоящая миссия — сорвать договор и, если понадобится, убить."
+        }
+      ]
+    },
+    "klaus_reinhardt": {
+      "starting_facts": [
+        {
+          "en": "The treaty can create immense industrial opportunity if shaped correctly.",
+          "ru": "Если договор будет составлен правильно, он может создать огромные промышленные возможности."
+        },
+        {
+          "en": "Keller is aligned with your broader interests.",
+          "ru": "Келлер в целом играет на ваших интересах."
+        },
+        {
+          "en": "Moretti is a direct commercial threat.",
+          "ru": "Моретти представляет собой прямую коммерческую угрозу."
+        }
+      ],
+      "starting_rumors": [
+        {
+          "en": "France might compromise more than it appears.",
+          "ru": "Франция может пойти на больший компромисс, чем кажется."
+        },
+        {
+          "en": "One British guest is behaving too fluidly for a simple businessman.",
+          "ru": "Один британский гость ведет себя слишком раскованно для простого бизнесмена."
+        }
+      ],
+      "starting_goal_awareness": [
+        {
+          "en": "Your public goal is industrial cooperation.",
+          "ru": "Ваша публичная цель - промышленное сотрудничество."
+        },
+        {
+          "en": "Your private goal is to lock in long-term German advantage.",
+          "ru": "Ваша личная цель — закрепить долгосрочное преимущество Германии."
+        }
+      ]
+    }
+  }
+}

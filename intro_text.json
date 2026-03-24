@@ -1,0 +1,41 @@
+{
+    "slides": [
+      {
+        "id": "slide_1",
+        "duration": 3000,
+        "text": {
+          "en": "Switzerland. A private estate hidden among the mountains.",
+          "ru": "Швейцария. Частное поместье, скрытое среди гор."
+        }
+      },
+      {
+        "id": "slide_2",
+        "duration": 3500,
+        "text": {
+          "en": "Seven men arrive to discuss the future of Europe.",
+          "ru": "Семь человек собираются обсудить будущее Европы."
+        }
+      },
+      {
+        "id": "slide_3",
+        "duration": 3500,
+        "text": {
+          "en": "An agreement is within reach. But not everyone wants it signed.",
+          "ru": "Соглашение почти достигнуто. Но не все хотят, чтобы его подписали."
+        }
+      },
+      {
+        "id": "slide_4",
+        "duration": 4000,
+        "text": {
+          "en": "Watch carefully. Listen closely. Every word may matter.",
+          "ru": "Смотри внимательно. Слушай внимательно. Каждое слово может иметь значение."
+        }
+      }
+    ],
+    "settings": {
+      "text_position": "bottom",
+      "text_animation": "typewriter",
+      "fade_between_slides": true
+    }
+  }
