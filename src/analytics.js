@@ -21,8 +21,19 @@ function toFormEncoded(payload) {
   ).toString();
 }
 
+function sendGetBeacon(payload) {
+  if (!WEBAPP_URL) return;
+  const qs = new URLSearchParams(
+    Object.entries(payload).map(([k, v]) => [k, typeof v === 'string' ? v : JSON.stringify(v)])
+  ).toString();
+  const img = new Image();
+  img.src = `${WEBAPP_URL}?${qs}`;
+}
+
 async function post(payload) {
   if (!WEBAPP_URL) return;
+  // Reliable delivery path for GitHub Pages + Apps Script.
+  sendGetBeacon(payload);
   try {
     await fetch(WEBAPP_URL, {
       method: 'POST',
@@ -31,7 +42,7 @@ async function post(payload) {
       body: toFormEncoded(payload),
     });
   } catch (_) {
-    // Silent fail: gameplay must continue even if analytics is unavailable.
+    // Silent fail: GET beacon already sent above.
   }
 }
 
